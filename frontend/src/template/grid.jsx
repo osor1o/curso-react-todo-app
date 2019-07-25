@@ -5,7 +5,7 @@ export default props => {
     const gridClasses = toCssClasses(props.cols || 12)
 
     return (
-        <div className={gridClasses}>
+        <div className={`${gridClasses} ${props.className}`}>
             {props.children}
         </div>
     )
