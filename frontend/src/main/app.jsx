@@ -3,12 +3,13 @@ import '@fortawesome/fontawesome-free/css/fontawesome.min.css'
 import '@fortawesome/fontawesome-free/js/all'
 
 import React from 'react'
-import Todo from '../todo/todo'
-import About from '../about/about'
+import Menu from '../template/menu'
+import Routes from './routes'
 
 export default props => (
     <div className="container">
-        <Todo />
-        <About />
+        <Routes>
+            <Menu />
+        </Routes>
     </div>
 )
